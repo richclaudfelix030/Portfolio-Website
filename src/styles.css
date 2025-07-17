@@ -181,6 +181,35 @@ p {
     z-index: 20;
 }
 
+/* New profile links section */
+.profile-links {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #181c1f;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.profile-btn:hover {
+    background: #222;
+    color: #00b86b;
+}
+
 /* Responsive styles */
 @media (max-width: 900px) {
     .top-nav {
