@@ -88,6 +88,16 @@ body {
     background: #31343c;
     color: #fff;
 }
+.nav-links a.active {
+    background: #31343c;
+    color: #19b88a;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 1px #19b88a;
+}
+.nav-links a.active:hover {
+    background: #3a3d45;
+    color: #2ecc97;
+}
 
 /* Hamburger Menu */
 .nav-toggle {

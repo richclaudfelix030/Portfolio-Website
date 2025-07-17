@@ -14,4 +14,13 @@ function updateLangColor(sel) {
 document.addEventListener('DOMContentLoaded', function() {
     var langSel = document.querySelector('.lang-switch');
     if (langSel) updateLangColor(langSel);
+    
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
 });
