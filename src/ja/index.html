@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cloud.jp</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
     <nav class="top-nav">
         <div class="logo-container">
             <a href="index.html" class="logo">cloud.jp</a>
         </div>
-        <button class="nav-toggle" aria-label="Open navigation">&#9776;</button>
+        <div class="nav-actions">
+            <button class="nav-toggle" aria-label="Open navigation">&#9776;</button>
+            <select class="lang-switch" aria-label="Change language" onchange="location = this.value;">
+                <option value="../en/index.html">English</option>
+                <option value="../ja/index.html" selected>日本語</option>
+            </select>
+        </div>
         <div class="nav-links">
-            <a href="education.html">Education</a>
-            <a href="experience.html">Experience</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="contact.html">Contact</a>
+            <a href="education.html">教育</a>
+            <a href="experience.html">経験</a>
+            <a href="skills.html">スキル</a>
+            <a href="projects.html">プロジェクト</a>
+            <a href="certifications.html">資格</a>
+            <a href="contact.html">連絡先</a>
         </div>
     </nav>
     <main class="side-by-side">
         <section class="details" style="align-items: center; text-align: center;">
-            <h1>Richclaud Felix</h1>
-            <div class="subtitle">Software QA Engineer</div>
+            <h1>フェリックス・リッチクラウド</h1>
+            <div class="subtitle">ソフトウェアQAエンジニア</div>
             <section class="about-me" style="align-items: left; text-align: left;">
-                <h2>About Me</h2>
+                <h2>自己紹介</h2>
                 <p>
-                    Experienced Software QA Engineer from the Philippines with a passion for all things tech and Japan.
+                    フィリピン出身の経験豊富なソフトウェア QA エンジニアで、テクノロジーと日本に対する情熱を持っています。
                 </p>
             </section>
             <div class="profile-links" style="margin: 24px 0;">
@@ -44,8 +50,8 @@
                 </a>
             </div>
         </section>
-        <img src="richclaudfelix.jpg" alt="Richclaud Felix" class="profile-photo" />
+        <img src="../images/richclaudfelix.jpg" alt="Richclaud Felix" class="profile-photo" />
     </main>
-    <script src="main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
